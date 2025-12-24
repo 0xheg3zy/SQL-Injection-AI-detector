@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vulnerable Login</title>
+    <style>
+        body {
+            background: #020617;
+            color: #e5e7eb;
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            background: #020617;
+            border: 1px solid #334155;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #020617;
+            border: 1px solid #334155;
+            color: white;
+        }
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background: #2563eb;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .msg {
+            margin-top: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>🔐 Login</h2>
+    <form method="POST">
+        <input name="username" placeholder="Username">
+        <input name="password" placeholder="Password" type="password">
+        <button>Login</button>
+    </form>
+    <div class="msg">{{ message }}</div>
+</div>
+
+</body>
+</html>
